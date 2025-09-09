@@ -180,7 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 208px;
+    
 }
 
 .player-info h3 {
@@ -195,8 +195,8 @@ body {
 .player-details {
     display: flex;
     align-items: center;
-    gap: 4px;
-    width: 230px;
+    gap: 2px;
+    
 }
 
 .status {
@@ -204,7 +204,7 @@ body {
     font-weight: 600;
     color: #64748b;
     line-height: 16px;
-    width: 69px;
+    
 }
 
 .cost {
