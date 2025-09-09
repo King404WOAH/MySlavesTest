@@ -1,0 +1,411 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0f172a;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.app-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 56px);
+    overflow-y: auto;
+}
+
+/* App Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 16px;
+    background-color: #ffffff;
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.app-info h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 24px;
+    margin: 0;
+}
+
+.app-info p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    line-height: 20px;
+    margin: 0;
+}
+
+/* Community Section */
+.community-section {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.community-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 16px;
+    background-color: #ffffff;
+}
+
+.community-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.library-books-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='library_books'%3E%3Cpath id='Vector' d='M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM10 9H18V11H10V9ZM10 12H14V14H10V12ZM10 6H18V8H10V6Z' fill='%230F172A'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.interpreter-mode-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='interpreter_mode'%3E%3Cpath id='Vector' d='M20 16.5C19.17 16.5 18.5 15.83 18.5 15V12.5C18.5 11.67 19.17 11 20 11C20.83 11 21.5 11.67 21.5 12.5V15C21.5 15.83 20.83 16.5 20 16.5ZM19.5 20H20.5V18.46C22.19 18.22 23.5 16.76 23.5 15H22.5C22.5 16.38 21.38 17.5 20 17.5C18.62 17.5 17.5 16.38 17.5 15H16.5C16.5 16.76 17.81 18.22 19.5 18.46V20ZM8.5 12C6.29 12 4.5 10.21 4.5 8C4.5 5.79 6.29 4 8.5 4C8.97 4 9.42 4.08 9.84 4.23C9 5.26 8.5 6.57 8.5 8C8.5 9.43 9 10.74 9.84 11.77C9.42 11.92 8.97 12 8.5 12ZM6.61 13.13C5.29 14.05 4.5 15.57 4.5 17.22V20H0.5V17.22C0.5 16.1 1.11 15.07 2.11 14.56C3.35 13.92 4.87 13.37 6.61 13.13ZM10.5 8C10.5 5.79 12.29 4 14.5 4C16.71 4 18.5 5.79 18.5 8C18.5 10.21 16.71 12 14.5 12C12.29 12 10.5 10.21 10.5 8ZM12.5 8C12.5 9.1 13.4 10 14.5 10C15.6 10 16.5 9.1 16.5 8C16.5 6.9 15.6 6 14.5 6C13.4 6 12.5 6.9 12.5 8ZM14.5 15C12.13 15 10.21 15.73 9.02 16.34C8.7 16.5 8.5 16.84 8.5 17.22V18H15.67C16.17 18.86 16.92 19.56 17.82 20H6.5V17.22C6.5 16.1 7.11 15.07 8.11 14.56C9.79 13.7 11.97 13 14.5 13C14.89 13 15.27 13.02 15.64 13.05C15.31 13.64 15.09 14.31 15.02 15.01C14.85 15 14.68 15 14.5 15Z' fill='%230F172A'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.import-export-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='import_export'%3E%3Cpath id='Vector' d='M8.64607 3.355L5.85607 6.145C5.53607 6.455 5.75607 6.995 6.20607 6.995H7.99607V13.005C7.99607 13.555 8.44607 14.005 8.99607 14.005C9.54607 14.005 9.99607 13.555 9.99607 13.005V6.995H11.7861C12.2361 6.995 12.4561 6.455 12.1361 6.145L9.34607 3.355C9.15607 3.165 8.83607 3.165 8.64607 3.355ZM15.9961 17.015V11.005C15.9961 10.455 15.5461 10.005 14.9961 10.005C14.4461 10.005 13.9961 10.455 13.9961 11.005V17.015H12.2061C11.7561 17.015 11.5361 17.555 11.8561 17.865L14.6461 20.645C14.8461 20.835 15.1561 20.835 15.3561 20.645L18.1461 17.865C18.4661 17.555 18.2361 17.015 17.7961 17.015H15.9961Z' fill='%230F172A'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.community-text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.community-text h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.community-text p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #64748b;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: -5px;
+}
+
+.community-right span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #64748b;
+    line-height: 24px;
+}
+
+/* Settings Section */
+.settings-section {
+    background-color: #ffffff;
+    padding: 6px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 90px;
+}
+
+.settings-section h2 {
+    font-size: 13.891px;
+    font-weight: 600;
+    color: #09090b;
+    line-height: 20px;
+    margin: 0;
+}
+
+.theme-selector {
+    background-color: #f4f4f5;
+    border-radius: 6px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.theme-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.theme-option.active {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    height: 22px;
+}
+
+.theme-option span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #64748b;
+    line-height: 20px;
+    text-align: center;
+}
+
+.theme-option.active span {
+    color: #0f172a;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.checkbox-container {
+    position: relative;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
+    background-color: #0f172a;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVG'%3E%3Cpath id='Vector' d='M11 5L6.1875 10L4 7.72727' stroke='white' stroke-width='1.16667' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checkbox-option label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+/* Prochee Section */
+.prochee-section {
+    background-color: #ffffff;
+    padding: 16px 16px 6px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 363px;
+}
+
+.prochee-section h2 {
+    font-size: 13.891px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 20px;
+    margin: 0;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 0 12px 0;
+}
+
+.tag-button {
+    background-color: #eff1f5;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tag-button:hover {
+    background-color: #e2e8f0;
+}
+
+/* Footer Info */
+.footer-info {
+    padding: 0 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 7px;
+    font-weight: 600;
+    color: #64748b;
+    line-height: 20px;
+    text-align: center;
+    width: 342px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-line .highlight {
+    color: #0f172a;
+}
+
+.separator {
+    width: 4px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #71717a;
+}
+
+.separator::before {
+    content: '•';
+    font-size: 8px;
+}
+
+/* Bottom Navigation */
+.bottom-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 13px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.account-box-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='account_box'%3E%3Cpath id='Vector' d='M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 6C13.93 6 15.5 7.57 15.5 9.5C15.5 11.43 13.93 13 12 13C10.07 13 8.5 11.43 8.5 9.5C8.5 7.57 10.07 6 12 6ZM19 19H5V18.77C5 18.15 5.28 17.57 5.76 17.19C7.47 15.82 9.64 15 12 15C14.36 15 16.53 15.82 18.24 17.19C18.72 17.57 19 18.16 19 18.77V19Z' fill='%23A1A1AA'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.store-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='store'%3E%3Cpath id='Vector' d='M5 6H19C19.55 6 20 5.55 20 5C20 4.45 19.55 4 19 4H5C4.45 4 4 4.45 4 5C4 5.55 4.45 6 5 6ZM20.16 7.8C20.07 7.34 19.66 7 19.18 7H4.82C4.34 7 3.93 7.34 3.84 7.8L2.84 12.8C2.72 13.42 3.19 14 3.82 14H4V19C4 19.55 4.45 20 5 20H13C13.55 20 14 19.55 14 19V14H18V19C18 19.55 18.45 20 19 20C19.55 20 20 19.55 20 19V14H20.18C20.81 14 21.28 13.42 21.16 12.8L20.16 7.8ZM12 18H6V14H12V18Z' fill='%23A1A1AA'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.widgets-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='widgets'%3E%3Cpath id='Vector' d='M12.5487 14.4462V20.4462C12.5487 20.9962 12.9987 21.4462 13.5487 21.4462H19.5487C20.0987 21.4462 20.5487 20.9962 20.5487 20.4462V14.4462C20.5487 13.8962 20.0987 13.4462 19.5487 13.4462H13.5487C12.9987 13.4462 12.5487 13.8962 12.5487 14.4462ZM3.54875 21.4462H9.54875C10.0987 21.4462 10.5487 20.9962 10.5487 20.4462V14.4462C10.5487 13.8962 10.0987 13.4462 9.54875 13.4462H3.54875C2.99875 13.4462 2.54875 13.8962 2.54875 14.4462V20.4462C2.54875 20.9962 2.99875 21.4462 3.54875 21.4462ZM2.54875 4.44625V10.4462C2.54875 10.9962 2.99875 11.4462 3.54875 11.4462H9.54875C10.0987 11.4462 10.5487 10.9962 10.5487 10.4462V4.44625C10.5487 3.89625 10.0987 3.44625 9.54875 3.44625H3.54875C2.99875 3.44625 2.54875 3.89625 2.54875 4.44625ZM15.4987 2.84625L11.2487 7.08625C10.8587 7.47625 10.8587 8.10625 11.2487 8.49625L15.4987 12.7463C15.8887 13.1363 16.5188 13.1363 16.9088 12.7463L21.1588 8.49625C21.5488 8.10625 21.5488 7.47625 21.1588 7.08625L16.9188 2.84625C16.5288 2.45625 15.8887 2.45625 15.4987 2.84625Z' fill='%2364748B'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.leaderboard-icon {
+    background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='100%25' height='100%25' overflow='visible' style='display: block;' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='leaderboard'%3E%3Cpath id='Vector' d='M6.5 21H3C2.45 21 2 20.55 2 20V10C2 9.45 2.45 9 3 9H6.5C7.05 9 7.5 9.45 7.5 10V20C7.5 20.55 7.05 21 6.5 21ZM13.75 3H10.25C9.7 3 9.25 3.45 9.25 4V20C9.25 20.55 9.7 21 10.25 21H13.75C14.3 21 14.75 20.55 14.75 20V4C14.75 3.45 14.3 3 13.75 3ZM21 11H17.5C16.95 11 16.5 11.45 16.5 12V20C16.5 20.55 16.95 21 17.5 21H21C21.55 21 22 20.55 22 20V12C22 11.45 21.55 11 21 11Z' fill='%23A1A1AA'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.nav-item span {
+    font-size: 11px;
+    font-weight: 600;
+    color: #a1a1aa;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.nav-item.active span {
+    color: #64748b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+    .app-container {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 376px) {
+    .app-container {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
