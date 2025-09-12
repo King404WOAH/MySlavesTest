@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Маркет - рабы</title>
-    <link rel="stylesheet" href="market-styles.css">
+    <title>Маркет - магазин</title>
+    <link rel="stylesheet" href="shop-styles.css">
 </head>
 <body>
     <div class="app-container">
@@ -13,10 +13,10 @@
             <!-- Tab Toggle -->
             <div class="tab-container">
                 <div class="tab-wrapper">
-                    <div class="tab active" data-tab="slaves">
+                    <div class="tab" data-tab="slaves">
                         <span>Рабы</span>
                     </div>
-                    <div class="tab" data-tab="shop">
+                    <div class="tab active" data-tab="shop">
                         <span>Магазин</span>
                     </div>
                     <div class="tab" data-tab="style">
@@ -25,28 +25,8 @@
                 </div>
             </div>
 
-            <!-- Slaves Content -->
-            <div class="slaves-content" id="slavesContent">
-                <!-- Info Section -->
-                <div class="info-section">
-                    <p>Доступны рабы из списка контактов из ТГ</p>
-                    <p>Можно подключить контакты из ВК</p>
-                </div>
-
-                <!-- Search Section -->
-                <div class="search-section">
-                    <input type="text" class="search-input" placeholder="Введи имя игрока" id="playerSearch">
-                    <button class="search-btn">Найти</button>
-                </div>
-
-                <!-- Players List -->
-                <div class="players-list" id="playersList">
-                    <!-- Players will be dynamically generated here -->
-                </div>
-            </div>
-
             <!-- Shop Content -->
-            <div class="shop-content" id="shopContent" style="display: none;">
+            <div class="shop-content" id="shopContent">
                 <!-- Info Text -->
                 <div class="info-text">
                     <p>Любой донат кроме стилей и плётки покупается навсегда. Плётка 7 дней, стили на 14 дней.</p>
@@ -107,6 +87,6 @@
         </div>
     </div>
 
-    <script src="market-script.js"></script>
+    <script src="shop-script.js"></script>
 </body>
 </html>

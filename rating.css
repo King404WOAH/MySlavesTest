@@ -176,7 +176,7 @@ body {
     border: 1px solid #cbd5e1;
     margin: 0 8px;
     padding: 5px 17px 5px 16px;
-    bottom: 0px;
+    bottom: 10px;
 }
 
 .player-avatar {
@@ -295,7 +295,7 @@ body {
 
 /* Bottom Navigation */
 .bottom-navigation {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -305,6 +305,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
+    border-top: 1px solid #e2e8f0;
+    flex-shrink: 0;
 }
 
 .nav-item {
@@ -359,19 +361,7 @@ body {
     width: 6px;
 }
 
-.players-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-}
 
-.players-list::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 3px;
-}
-
-.players-list::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
-}
 
 /* Responsive adjustments */
 @media (max-width: 375px) {
