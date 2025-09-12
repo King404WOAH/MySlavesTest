@@ -23,25 +23,28 @@ body {
 .app-container {
     position: relative;
     width: 100%;
-    max-width: 400px;
     height: 100%;
+    max-width: 400px;
     max-height: 900px;
     margin: 0 auto;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 56px);
-    overflow-y: auto;
+    flex: 1;
+    overflow: hidden;
 }
 
 /* Tab Toggle */
 .tab-container {
     background-color: #ffffff;
     padding: 12px 16px 5px 16px;
+    flex-shrink: 0;
 }
 
 .tab-wrapper {
@@ -84,15 +87,16 @@ body {
 /* Countdown Section */
 .countdown-section {
     background-color: #ffffff;
-    padding: 10px 0 10px 0;
+    padding: 5px 44px 5px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 6px;
-
-    margin: auto;
-
+    box-shadow: 0px 4px 4px 0px rgba(174,174,174,0.25);
+    margin: 0;
+    width: 100%;
     position: relative;
+    flex-shrink: 0;
 }
 
 .countdown-content {
@@ -100,7 +104,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    width: 279px;
 }
 
 .countdown-content h2 {
@@ -135,23 +139,8 @@ body {
     flex-shrink: 0;
 }
 
-/* Players List */
-.players-list {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-}
-
-.players-list.top-section {
-    margin-bottom: 0;
-}
-
-.players-list.bottom-section {
-    margin-top: 0;
-}
-
-.player-list {
+/* Clans List */
+.clans-list {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -160,7 +149,7 @@ body {
     padding-bottom: 10px;
 }
 
-.player-card {
+.clan-card {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -171,7 +160,7 @@ body {
     flex-shrink: 0;
 }
 
-.player-card.special {
+.clan-card.special {
     position:sticky;
     border: 1px solid #cbd5e1;
     margin: 0 8px;
@@ -179,7 +168,7 @@ body {
     bottom: 0px;
 }
 
-.player-avatar {
+.clan-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -188,34 +177,41 @@ body {
     position: relative;
 }
 
-.player-avatar img {
+.special-avatar {
+    border-radius: 4px;
+}
+
+.clan-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 100px;
 }
 
-.player-info {
+.clan-info {
     display: flex;
     flex-direction: column;
     flex: 1;
-    
+    width: 216px;
 }
 
-.player-info h3 {
+.clan-info h3 {
     font-size: 13px;
     font-weight: 600;
     color: #0f172a;
     line-height: 20px;
     margin: 0;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.player-stats {
+.clan-stats {
     display: flex;
     align-items: center;
     gap: 4px;
-    
+    width: 230px;
 }
 
 .balance {
@@ -223,7 +219,6 @@ body {
     font-weight: 600;
     color: #64748b;
     line-height: 16px;
-    
 }
 
 .users {
@@ -231,11 +226,9 @@ body {
     font-weight: 600;
     color: #64748b;
     line-height: 16px;
-    
 }
 
 .separator {
-    width: 11.984px;
     height: 12px;
     display: flex;
     align-items: center;
@@ -258,7 +251,7 @@ body {
     color: #64748b;
     text-align: right;
     line-height: 16px;
-    margin-right: 15px;
+    width: 55px;
 }
 
 /* Rank Colors */
@@ -272,6 +265,14 @@ body {
 
 .rank.bronze {
     color: #cd7f32;
+}
+
+.rank.banned {
+    color: #ca323f;
+}
+
+.rank.special-rank {
+    color: #64748b;
 }
 
 /* SVG Icons */
@@ -295,7 +296,7 @@ body {
 
 /* Bottom Navigation */
 .bottom-navigation {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -305,6 +306,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
+    border-top: 1px solid #e2e8f0;
+    flex-shrink: 0;
 }
 
 .nav-item {
@@ -355,38 +358,47 @@ body {
     color: #64748b;
 }
 
-.players-list::-webkit-scrollbar {
+/* Scrollbar styling */
+.clans-list::-webkit-scrollbar {
     width: 6px;
 }
 
-.players-list::-webkit-scrollbar-track {
+.clans-list::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 3px;
 }
 
-.players-list::-webkit-scrollbar-thumb {
+.clans-list::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 3px;
 }
 
-.players-list::-webkit-scrollbar-thumb:hover {
+.clans-list::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
 }
 
 /* Responsive adjustments */
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .app-container {
         width: 100vw;
     }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 401px) {
     .app-container {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 }
 
-.players-list {
+/* Mobile landscape adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .app-container {
+        max-height: 100vh;
+    }
+}
+
+/* Touch scroll improvements */
+.clans-list {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
 }

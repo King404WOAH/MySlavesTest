@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рейтинг - игроки</title>
-    <link rel="stylesheet" href="rating.css">
+    <title>Рейтинг - кланы</title>
+    <link rel="stylesheet" href="rating-clans.css">
 </head>
 <body>
     <div class="app-container">
@@ -13,14 +13,14 @@
             <!-- Tab Toggle -->
             <div class="tab-container">
                 <div class="tab-wrapper">
-                    <div class="tab active">
-                        <span>Игроки</span>
+                    <div class="tab">
+                        <a href="rating.html"><span>Игроки</span></a>
                     </div>
                     <div class="tab">
                         <span>Друзья</span>
                     </div>
-                    <div class="tab">
-                        <a href="rating-clans.html"><span>Кланы</span></a>
+                    <div class="tab active">
+                        <span>Кланы</span>
                     </div>
                 </div>
             </div>
@@ -34,16 +34,16 @@
                 <div class="info-icon"></div>
             </div>
 
-            <!-- Top 5 Players -->
-            <div class="players-list" id="playersList">
+            <!-- Clans List -->
+            <div class="clans-list" id="clansList">
                 <!-- Clan 1 - Gold -->
-                <div class="player-card">
-                    <div class="player-avatar">
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
+                    <div class="clan-info">
                         <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -54,47 +54,50 @@
                     <div class="rank gold">Топ 1</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 2 - Silver -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
+                    <div class="clan-info">
+                        <h3>Рабство 2025 New</h3>
+                        <div class="clan-stats">
+                            <span class="balance">91 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
-                            <span class="users">62 910 817</span>
+                            <span class="users">189 716</span>
                             <div class="icon-user"></div>
                         </div>
                     </div>
                     <div class="rank silver">Топ 2</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 3 - Bronze -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
+                    <div class="clan-info">
+                        <h3>Нагибаторы</h3>
+                        <div class="clan-stats">
+                            <span class="balance">90,9 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
-                            <span class="users">62 910 817</span>
+                            <span class="users">927 918</span>
                             <div class="icon-user"></div>
                         </div>
                     </div>
                     <div class="rank bronze">Топ 3</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 4 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>USSR</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -105,13 +108,14 @@
                     <div class="rank">4</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 5 - Banned -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Адские чебуреки</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -119,34 +123,17 @@
                             <div class="icon-user"></div>
                         </div>
                     </div>
-                    <div class="rank">5</div>
+                    <div class="rank banned">Бан</div>
                 </div>
 
                 <!-- Clan 6 -->
-                <div class="player-card">
-                    <div class="player-avatar">
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
-                            <div class="icon-database"></div>
-                            <div class="separator"></div>
-                            <span class="users">62 910 817</span>
-                            <div class="icon-user"></div>
-                        </div>
-                    </div>
-                    <div class="rank">5</div>
-                </div>
-
-                <div class="player-card">
-                    <div class="player-avatar">
-                        <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
-                    </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Муххамеды</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -157,13 +144,14 @@
                     <div class="rank">6</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 7 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Russian Style</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -174,13 +162,14 @@
                     <div class="rank">7</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 8 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Deleted Group</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -191,13 +180,14 @@
                     <div class="rank">8</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 9 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Не опущена, а занижена</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -208,13 +198,14 @@
                     <div class="rank">9</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 10 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Набор в клан | Бездомные</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -225,13 +216,14 @@
                     <div class="rank">10</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 11 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
+                    <div class="clan-info">
+                        <h3>Семейка Крудс</h3>
+                        <div class="clan-stats">
                             <span class="balance">179,6 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -242,82 +234,68 @@
                     <div class="rank">11</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 12 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
+                    <div class="clan-info">
+                        <h3>Красные боксеры</h3>
+                        <div class="clan-stats">
+                            <span class="balance">125,3 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
-                            <span class="users">62 910 817</span>
+                            <span class="users">45 718 291</span>
                             <div class="icon-user"></div>
                         </div>
                     </div>
                     <div class="rank">12</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 13 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
+                    <div class="clan-info">
+                        <h3>Золотые орлы</h3>
+                        <div class="clan-stats">
+                            <span class="balance">98,7 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
-                            <span class="users">62 910 817</span>
+                            <span class="users">31 829 456</span>
                             <div class="icon-user"></div>
                         </div>
                     </div>
                     <div class="rank">13</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
+                <!-- Clan 14 -->
+                <div class="clan-card">
+                    <div class="clan-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
                     </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
+                    <div class="clan-info">
+                        <h3>Темные властелины</h3>
+                        <div class="clan-stats">
+                            <span class="balance">87,2 млрд</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
-                            <span class="users">62 910 817</span>
+                            <span class="users">28 917 384</span>
                             <div class="icon-user"></div>
                         </div>
                     </div>
                     <div class="rank">14</div>
                 </div>
 
-                <div class="player-card">
-                    <div class="player-avatar">
-                        <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNzU3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Clan Avatar">
-                    </div>
-                    <div class="player-info">
-                        <h3>Dark Kingmoms</h3>
-                        <div class="player-stats">
-                            <span class="balance">179,6 млрд</span>
-                            <div class="icon-database"></div>
-                            <div class="separator"></div>
-                            <span class="users">62 910 817</span>
-                            <div class="icon-user"></div>
-                        </div>
-                    </div>
-                    <div class="rank">15</div>
-                </div>
-
                 <!-- Clan 15 - Special last one -->
-                <div class="player-card special">
-                    <div class="player-avatar special-avatar">
+                <div class="clan-card special">
+                    <div class="clan-avatar special-avatar">
                         <img src="https://images.unsplash.com/photo-1639327380081-bf86fc57a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGFuJTIwYXZhdGFyJTIwdGVhbSUyMGxvZ298ZW58MXx8fHwxNTc3NTUxNTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral&w=40&h=40" alt="Special Clan">
                     </div>
-                    <div class="player-info">
+                    <div class="clan-info">
                         <h3>NIGMA | Монетки за вступ...</h3>
-                        <div class="player-stats">
+                        <div class="clan-stats">
                             <span class="balance">198 019</span>
                             <div class="icon-database"></div>
                             <div class="separator"></div>
@@ -358,6 +336,7 @@
             </a>
         </div>
     </div>
+
     <script src="rating-clans.js"></script>
 </body>
 </html>
